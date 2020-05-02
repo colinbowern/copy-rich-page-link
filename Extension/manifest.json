@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "name": "Copy Rich Link to Page",
+    "version": "1.0",
+    "description": "Copy a link to this page as a rich HTML snippet for pasting into other rich editors",
+    "author": "Colin Bowern",
+    "icons": {
+        "176": "icon-176.png",
+        "128": "icon-128.png",
+        "48": "icon-48.png"
+    },
+    "permissions": [
+        "activeTab",
+        "clipboardWrite"
+    ],
+    "browser_action": {
+        "default_icon": {
+            "40": "icon-40.png",
+            "38": "icon-38.png",
+            "35": "icon-35.png",
+            "30": "icon-30.png",
+            "25": "icon-25.png",
+            "20": "icon-20.png",
+            "19": "icon-19.png"
+        },
+        "default_title": "Copy a rich link to this page with the title"
+    },
+    "background": {
+        "scripts": [
+            "clipboard-polyfill.js",
+            "background.js"
+        ],
+        "persistent": true
+    }
+}
